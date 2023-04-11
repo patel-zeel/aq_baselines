@@ -1,0 +1,28 @@
+data_file: delhi/cpcb/data/delhi_cpcb_2022.nc
+common:
+  features: ["longitude", "latitude", "time"]
+  target: "PM2.5"
+  start_date: "2022-01-01"
+  end_date: "2022-01-31"
+  n_seeds: 3
+  n_folds: 4
+  seed: None
+  fold: None
+
+model: None
+
+RF: # Random Forest
+  n_estimators: 1000
+  random_state: 0
+
+GB: # Gradient Boosting
+  n_estimators: 1000
+  random_state: 0
+
+GP: # Gaussian Process
+  kernel: "RBFKernel"
+  matern_nu: 1.5
+  random_state: 0
+  lr: 0.1
+  epochs: 20
+  log_gap: 10

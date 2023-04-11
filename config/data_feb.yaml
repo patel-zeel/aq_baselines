@@ -1,8 +1,0 @@
-path: aq_data/delhi/cpcb/data/delhi_cpcb_2022.nc
-features: ["longitude", "latitude", "time"]
-target: "PM2.5"
-start_date: "2022-02-01"
-end_date: "2022-02-28"
-n_seeds: 3
-n_folds: 4
-artifacts_path: "experiments/delhi/cpcb/artifacts"
